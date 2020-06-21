@@ -1,5 +1,7 @@
 obj-m := acpi_call.o
 
+CONFIG_MODULE_SIG=n
+
 KVERSION := $(shell uname -r)
 KDIR := /lib/modules/$(KVERSION)/build
 PWD := $(shell pwd)
